@@ -1,0 +1,17 @@
+<h2 class="text-center">Your cart</h2>
+<h5 class="text-center">Total: {{ total }} €</h5>
+<button class="btn btn-primary" (click)="deletebtn()">Remove all</button>
+<div class="row row-cols-lg-3 p-3 styleing">
+    <div class="card cards" style="width: 18rem;"  *ngFor="let item of cart">
+        <h5 class="card-header">{{item.name}}</h5>
+        <br>
+        <img style="width: auto; height: 100%;" src="{{item.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">{{item.type}}</p>
+            <p class="card-text">{{item.price}} €</p>
+            <button class="btn btn-primary" (click)="deleteElment()">Remove</button>
+        </div>
+    </div>
+</div>
+
+

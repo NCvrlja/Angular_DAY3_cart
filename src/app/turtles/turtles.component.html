@@ -1,0 +1,12 @@
+<h3 class="text-center">Our turtles</h3>
+<div class="row row-cols-lg-3 p-3 styleing">
+    <div class="card cards" style="width: 18rem;" *ngFor="let turtle of turtles; index as i">
+        <h5 class="card-header">{{turtle.name}}</h5>
+        <br>
+        <img style="height: 100%;" src="{{turtle.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">{{turtle.type}}</p>
+            <a routerLink="/turtles/{{ i }}" class="btn btn-primary">See details</a>
+        </div>
+    </div>
+</div>

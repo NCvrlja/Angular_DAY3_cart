@@ -1,0 +1,15 @@
+.styleing {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cards {
+    text-align: center;
+    padding: 5px 5px;
+
+    .btns {
+        display: inline-flex;
+        gap: 5px;
+    }
+}

@@ -1,0 +1,12 @@
+<h3 class="text-center">Our dogs</h3>
+<div class="row row-cols-lg-3 p-3 styleing">
+    <div class="card cards" style="width: 18rem;" *ngFor="let dog of dogs; index as i">
+        <h5 class="card-header">{{dog.name}}</h5>
+        <br>
+        <img style="width: auto; height: 100%;" src="{{dog.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">{{dog.type}}</p>
+            <a routerLink="/dogs/{{ i }}" class="btn btn-primary">See details</a>
+        </div>
+    </div>
+</div>
